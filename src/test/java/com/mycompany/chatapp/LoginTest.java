@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LoginTest {
     
-    private Login login;
+    private  satic void Login login;
     
     @BeforeEach  // JUnit 5 uses @BeforeEach instead of @Before
     public void setUp() {
