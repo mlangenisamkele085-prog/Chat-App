@@ -30,7 +30,7 @@ public class Login {
     }
     boolean hasCapital = false ;
     boolean hasNumber = false ;
-    boolean hasSpecial = false 
+    boolean hasSpecial = false ;
     
     for (char c : password.toCharArray()){
     if (Character.isUpperCase(c)){
@@ -86,7 +86,7 @@ public String returnLoginStatus(String enteredUsername , String enteredPassword)
     if (loginUser(enteredUsername , enteredPassword)){
         return "Welcome " + firstName +" "+ lastName + ", it is great to see you again.";
     }else{
-        return "Username or password entered is incorrect.Please try again";
+        return "Username or password entered is incorrect. Please try again";
     }
 }
 //getter for testing 
