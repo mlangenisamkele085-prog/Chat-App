@@ -28,7 +28,7 @@ public class ChatApp {
             System.out.println("Enter Cellphone number(+27********)");
             String cellPhoneNumber = scanner.nextLine();
             
-            System.out.println("Enter sername (must conatain an underscore and is no more than 5 characters in length.)");
+            System.out.println("Enter Username (must conatain an underscore and is no more than 5 characters in length.)");
             String username = scanner.nextLine();
             
             System.out.println("Enter Password (8 Charcters , 1 capital letter ,1 number , 1 special):");
