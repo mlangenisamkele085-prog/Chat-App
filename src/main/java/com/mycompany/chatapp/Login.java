@@ -30,7 +30,7 @@ public class Login {
     }
     boolean hasCapital = false ;
     boolean hasNumber = false ;
-    boolean hasSpecial = false ;
+    boolean hasSpecial = false 
     
     for (char c : password.toCharArray()){
     if (Character.isUpperCase(c)){
