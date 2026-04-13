@@ -14,9 +14,9 @@ public class ChatApp {
         try (Scanner scanner = new Scanner(System.in)) {
             Login loginSystem = new Login();
             
-            System.out.println("=".repeat(70));
+            System.out.println("=".repeat(40));
             System.out.println("CHAT APP - REGISTRATION");
-            System.out.println("=".repeat(70));
+            System.out.println("=".repeat(40));
             
             //Registaring
             System.out.println("Enter your First Name:");
