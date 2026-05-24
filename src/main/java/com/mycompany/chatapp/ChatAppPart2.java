@@ -101,7 +101,7 @@ public class ChatAppPart2 {
                         System.out.println("Recent messages feature is still going to be developed.");
                         break;
                     case 3:
-                        System.out.println("Goodbye! Thanks for using ChatAPP.");
+                        System.out.println("Goodbye!. Thanks for using ChatAPP.");
                         running = false;
                         break;
                     default:
