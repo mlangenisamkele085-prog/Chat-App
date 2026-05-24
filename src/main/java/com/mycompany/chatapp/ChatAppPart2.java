@@ -18,9 +18,9 @@ public class ChatAppPart2 {
             Login loginSystem = new Login();
             List<Message> allMessages = new ArrayList<>();
             
-            System.out.println("=".repeat(40));
+            System.out.println("=".repeat(70));
             System.out.println("CHAT APP - REGISTRATION");
-            System.out.println("=".repeat(40));
+            System.out.println("=".repeat(70));
             
             //Registaring
             System.out.println("Enter your First Name:");
