@@ -170,7 +170,7 @@ public class ChatAppPart2 {
             System.out.println("2.Store Message to be sent later (coming soon in development)");
             System.out.println("3.Disregard Message");
             
-            System.out.print("Choose an option: ");
+            System.out.print("Choose an option(Number): ");
             int option;
             try {
                 option = Integer.parseInt(scanner.nextLine());
