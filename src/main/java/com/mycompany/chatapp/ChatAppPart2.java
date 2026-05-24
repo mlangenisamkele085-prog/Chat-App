@@ -39,7 +39,7 @@ public class ChatAppPart2 {
             String password =scanner.nextLine();
             
             String registrationResults = loginSystem.registerUser(username, password, cellPhoneNumber, firstname, lastName);
-            System.out.println("\n" + registrationResults);
+            System.out.println( registrationResults);
             
             if(!registrationResults.contains("successfully")){
                 System.out.println("Registration failed. Please restart the applictaion");
