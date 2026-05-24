@@ -167,7 +167,7 @@ public class ChatAppPart2 {
             System.out.println("Options:");
             System.out.println("=".repeat(70));
             System.out.println("1.Send Messages");
-            System.out.println("2.Store Message to be sent later (coming soon in development)");
+            System.out.println("2.Store Message to be sent later (coming soon in development) ");
             System.out.println("3.Disregard Message");
             
             System.out.print("Choose an option(Number): ");
