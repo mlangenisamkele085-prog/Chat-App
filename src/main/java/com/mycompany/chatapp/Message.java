@@ -29,7 +29,7 @@ public class Message {
         this.status = "pending";
     }
     
-    // Generate 10-digit unique Message ID
+    // 10-digit unique Message ID
     private long generateMessageID() {
         Random random = new Random();
         return 1000000000L + (long)(random.nextDouble() * 9000000000L);
@@ -40,7 +40,7 @@ public class Message {
         return String.valueOf(messageID).length() <= 10;
     }
     
-    // Check recipient cell number (reusing your pattern from Login)
+    // Check recipient cell number 
     public String checkRecipientCell(String cellNumber) {
         String saPhoneNumberRegex = "\\+27[0-9]{9}$";
         if (cellNumber != null && Pattern.matches(saPhoneNumberRegex, cellNumber)) {
