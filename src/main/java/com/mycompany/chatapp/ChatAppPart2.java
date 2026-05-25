@@ -67,6 +67,10 @@ public class ChatAppPart2 {
                 scanner.close();
                 return;
             }
+            ///pART 2
+           
+            
+            
             
             //MESSAGING MENU
             System.out.println("=".repeat(70));
@@ -187,7 +191,7 @@ public class ChatAppPart2 {
                 allMessages.add(message);
             }
             
-            // Display final message info as required by POE
+            // Display final message info 
             System.out.println("=".repeat(70));
             System.out.println("Message Details:");
             System.out.println("=".repeat(70));
