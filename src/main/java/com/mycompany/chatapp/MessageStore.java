@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class MessageStore {
  
-    // Arrays as required by POE
+    
     private List<Message> sentMessages;
     private List<Message> disregardedMessages;
     private List<Message> storedMessages;
@@ -26,9 +26,9 @@ public class MessageStore {
         messageIDs = new ArrayList<>();
     }
     
-    // Add a message to appropriate list based on status
+    //  message to appropriate list 
     public void addMessage(Message message) {
-        // Add to ID and Hash arrays
+       
         messageIDs.add(message.getMessageID());
         messageHashes.add(message.getMessageHash());
         
@@ -46,7 +46,7 @@ public class MessageStore {
         }
     }
     
-    // Load test data as required by POE
+    //  test data
     public void loadTestData(Login loginSystem) {
         // Test Data Message 1 - Sent
         Message m1 = new Message("+27834557896", "Did you get the cake?", 1);
@@ -79,9 +79,7 @@ public class MessageStore {
         addMessage(m5);
     }
     
-    // ========== STORED MESSAGES FEATURES ==========
-    
-    // 2a. Display sender and recipient of all stored messages
+  
     public String displayStoredMessagesSummary() {
         if (storedMessages.isEmpty()) {
             return "No stored messages found.";
@@ -99,7 +97,7 @@ public class MessageStore {
         return result.toString();
     }
     
-    // 2b. Display the longest stored message
+    // Display the longest stored message
     public String getLongestStoredMessage() {
         if (storedMessages.isEmpty()) {
             return "No stored messages found.";
@@ -114,7 +112,7 @@ public class MessageStore {
         return longest.getMessageText();
     }
     
-    // 2c. Search for a message ID and display recipient and message
+    //Search for a message ID and display recipient and message
     public String searchByMessageID(long messageID) {
         for (Message msg : storedMessages) {
             if (msg.getMessageID() == messageID) {
@@ -129,7 +127,7 @@ public class MessageStore {
         return "Message ID not found.";
     }
     
-    // 2d. Search all messages for a particular recipient
+    //  Search all messages for a recipient
     public String searchByRecipient(String recipientNumber) {
         StringBuilder result = new StringBuilder();
         boolean found = false;
@@ -150,7 +148,7 @@ public class MessageStore {
         return found ? result.toString().trim() : "No messages found for recipient: " + recipientNumber;
     }
     
-    // 2e. Delete a message using message hash
+    //Delete a message using message hash
     public String deleteByMessageHash(String messageHash) {
         for (int i = 0; i < storedMessages.size(); i++) {
             if (storedMessages.get(i).getMessageHash().equals(messageHash)) {
@@ -162,7 +160,7 @@ public class MessageStore {
         return "Message hash not found.";
     }
     
-    // 2f. Display full report of all stored messages
+    //Display full report of all stored messages
     public String displayFullReport() {
         if (storedMessages.isEmpty()) {
             return "No stored messages found.";
@@ -181,7 +179,7 @@ public class MessageStore {
         return result.toString();
     }
     
-    // Getters for arrays (for testing)
+   
     public List<Message> getSentMessages() { return sentMessages; }
     public List<Message> getStoredMessages() { return storedMessages; }
     public List<Message> getDisregardedMessages() { return disregardedMessages; }
