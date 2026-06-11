@@ -229,7 +229,7 @@ public class ChatAppPart3 {
         while (!back) {
             System.out.println();
             System.out.println("=".repeat(70));
-            System.out.println("STORED MESSAGES MENU");
+            System.out.println("STORED MESSAGES MENU\n");
             System.out.println("=".repeat(70));
             System.out.println("a. Display sender and recipient of all stored messages");
             System.out.println("b. Display the longest stored message");
