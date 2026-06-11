@@ -124,5 +124,15 @@ public class Message {
     public void setStatus(String status) {
         this.status = status; 
     }
+    
+        // Part 3
+    
+    private String senderName;
+    public void setSenderName(String firstName, String lastName) {
+        this.senderName = firstName + " " + lastName;
+    }
+    public String getSenderName() {
+        return senderName;
+    }
 }
     
