@@ -249,7 +249,7 @@ public class ChatAppPart3 {
                     break;
                 case "b":
                     System.out.println("Longest Stored Message:");
-                    System.out.println("=".repeat(50));
+                    System.out.println("=".repeat(70));
                     System.out.println(messageStore.getLongestStoredMessage());
                     break;
                 case "c":
@@ -265,7 +265,7 @@ public class ChatAppPart3 {
                     System.out.print("Enter Recipient Number: ");
                     String recipient = scanner.nextLine();
                     System.out.println(" Messages for " + recipient + ":");
-                    System.out.println("=".repeat(50));
+                    System.out.println("=".repeat(70));
                     System.out.println(messageStore.searchByRecipient(recipient));
                     break;
                 case "e":
