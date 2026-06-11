@@ -86,7 +86,7 @@ public class MessageStore {
         }
         
         StringBuilder result = new StringBuilder();
-        result.append("\n📦 STORED MESSAGES SUMMARY\n");
+        result.append("STORED MESSAGES SUMMARY");
         result.append("=".repeat(50)).append("\n");
         
         for (Message msg : storedMessages) {
@@ -167,7 +167,7 @@ public class MessageStore {
         }
         
         StringBuilder result = new StringBuilder();
-        result.append("\n📊 FULL STORED MESSAGES REPORT\n");
+        result.append(" FULL STORED MESSAGES REPORT");
         result.append("=".repeat(60)).append("\n");
         
         for (Message msg : storedMessages) {
