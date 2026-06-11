@@ -10,13 +10,13 @@ import java.util.List;
  * @author Student
  */
 public class MessageStore {
- 
     
-    private List<Message> sentMessages;
     private List<Message> disregardedMessages;
+    private List<Message> sentMessages;
     private List<Message> storedMessages;
-    private List<String> messageHashes;
     private List<Long> messageIDs;
+    private List<String> messageHashes;
+    
     
     public MessageStore() {
         sentMessages = new ArrayList<>();
