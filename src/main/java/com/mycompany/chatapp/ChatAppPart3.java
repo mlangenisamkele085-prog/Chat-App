@@ -248,7 +248,7 @@ public class ChatAppPart3 {
                     System.out.println(messageStore.displayStoredMessagesSummary());
                     break;
                 case "b":
-                    System.out.println("\n📏 Longest Stored Message:");
+                    System.out.println("Longest Stored Message:");
                     System.out.println("=".repeat(50));
                     System.out.println(messageStore.getLongestStoredMessage());
                     break;
@@ -264,7 +264,7 @@ public class ChatAppPart3 {
                 case "d":
                     System.out.print("Enter Recipient Number: ");
                     String recipient = scanner.nextLine();
-                    System.out.println("\n📧 Messages for " + recipient + ":");
+                    System.out.println(" Messages for " + recipient + ":");
                     System.out.println("=".repeat(50));
                     System.out.println(messageStore.searchByRecipient(recipient));
                     break;
