@@ -50,7 +50,7 @@ public class ChatAppPart3 {
                 return;
             }
             
-            // Login (SAME AS YOUR PART 2)
+            // Login 
             System.out.println("=".repeat(70));
             System.out.println("LOGIN");
             System.out.println("=".repeat(70));
@@ -70,10 +70,10 @@ public class ChatAppPart3 {
                 return;
             }
             
-            // Load test data for Part 3
+            //test data 
             messageStore.loadTestData(loginSystem);
             
-            // Main Menu (UPDATED with option 3 for Stored Messages)
+           
             System.out.println("=".repeat(70));
             System.out.println("Welcome to QuickChat.");
             System.out.println("=".repeat(70));
@@ -86,8 +86,8 @@ public class ChatAppPart3 {
                 System.out.println("=".repeat(70));
                 System.out.println("1. Send Messages");
                 System.out.println("2. Show recently Sent Messages");
-                System.out.println("3. Stored Messages");  // NEW OPTION
-                System.out.println("4. Quit");              // WAS OPTION 3
+                System.out.println("3. Stored Messages"); 
+                System.out.println("4. Quit");             
                 
                 System.out.print("Choose an option (Number): ");
                 int choice;
@@ -107,7 +107,7 @@ public class ChatAppPart3 {
                         showRecentMessages();
                         break;
                     case 3:
-                        storedMessagesMenu(scanner);  // NEW MENU
+                        storedMessagesMenu(scanner);  
                         break;
                     case 4:
                         System.out.println("Goodbye! Thanks for using ChatAPP.");
@@ -121,7 +121,7 @@ public class ChatAppPart3 {
     }
     
     private static void sendMessages(Scanner scanner, List<Message> allMessages, Login loginSystem) {
-        // THIS IS THE SAME AS YOUR PART 2 sendMessages METHOD
+        
         System.out.println("SEND MESSAGES");
         System.out.println("=".repeat(70));
         
@@ -206,7 +206,7 @@ public class ChatAppPart3 {
     }
     
     private static void showRecentMessages() {
-        // SAME AS YOUR PART 2
+        
         System.out.println("=".repeat(70));
         System.out.println("RECENT SENT MESSAGES");
         System.out.println("=".repeat(70));
@@ -223,7 +223,7 @@ public class ChatAppPart3 {
         }
     }
     
-    // NEW: Stored Messages Menu for Part 3
+    // Part 3
     private static void storedMessagesMenu(Scanner scanner) {
         boolean back = false;
         while (!back) {
